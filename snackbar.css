@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&family=Roboto:wght@100;300;400;500;700;900&family=Satisfy&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f9fafb;
+  font-family: "Barlow", sans-serif;
+}
+
+.gen-pad {
+  padding: 2rem 15rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+nav p {
+  color: #2f2f2f;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+nav div {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+nav div img {
+  height: 40px;
+  width: 40px;
+}
+
+nav div small {
+  color: #adadad;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* main section .base {
+  display: flex;
+  width: auto;
+  padding: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+} */
+
+main section .base-area {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.base-area p {
+  font-size: 20px;
+  color: #2f2f2f;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+main section .container {
+  border: 1px dashed rgba(145, 158, 171, 0.32);
+  border-radius: 1rem;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 960px;
+  align-items: flex-start;
+}
+
+.snackbar {
+  border-radius: 8px;
+  background: #fff;
+  padding: 10px 8px 10px 12px;
+  width: 420px;
+  height: 64px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Shadows/Light/z8 */
+  box-shadow: 0px 8px 16px 0px rgba(145, 158, 171, 0.16);
+}
+
+.snackbar.black {
+  background-color: #161c24;
+  color: #fff;
+}
+
+.snackbar div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  padding: 8px 16px 8px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+button {
+  display: flex;
+  padding: 5px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+span {
+  padding: 8px;
+  border-radius: 12px;
+}
+.cancel-button {
+  border: #adadad 1px solid;
+  background: #fff;
+}
+
+#black-button {
+  border-radius: 8px;
+  background: rgba(33, 43, 54, 1);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  color: white;
+  border: #adadad 1px solid;
+}
+
+#white-button {
+  border-radius: 8px;
+  background: white;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: black;
+}
+
+#blue-button {
+  border-radius: 8px;
+  background: rgba(0, 184, 217, 0.16);
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: rgba(0, 108, 156, 1);
+}
+
+.blue-span {
+  background-color: rgba(0, 184, 217, 0.16);
+}
+
+#amber-button {
+  border-radius: 8px;
+  background: rgba(255, 171, 0, 0.16);
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: rgba(183, 110, 0, 1);
+}
+
+.amber-span {
+  background-color: rgba(255, 171, 0, 0.16);
+}
+
+#red-button {
+  border-radius: 8px;
+  background: rgba(255, 86, 48, 0.16);
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: rgba(183, 29, 24, 1);
+}
+
+.red-span {
+  background-color: rgba(255, 86, 48, 0.16);
+}
+
+#green-button {
+  border-radius: 8px;
+  background: rgba(54, 179, 126, 0.16);
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: rgba(27, 128, 106, 1);
+}
+
+.green-span {
+  background-color: rgba(54, 179, 126, 0.16);
+}
+
+.container .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 280px);
+  gap: 40px 230px;
+  align-items: center;
+  justify-content: space-evenly;
+}
